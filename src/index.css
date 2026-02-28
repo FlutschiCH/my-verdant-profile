@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #050805;
+  --color-foreground: #ffffff;
+  --radius-xl: 1.5rem; /* rounded-3xl equivalent */
+  --radius-2xl: 2rem;
+  --color-primary: theme(colors.emerald.500);
+}
+
+:root {
+  background-color: #050805;
+  color: white;
+}
+
+/* Custom Glassmorphism for Tailwind v4 */
+@utility glass {
+  background-color: theme(colors.emerald.950 / 0.1);
+  backdrop-filter: blur(12px);
+  border: 1px solid theme(colors.emerald.900 / 0.2);
+}
